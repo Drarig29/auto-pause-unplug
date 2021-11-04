@@ -37,4 +37,9 @@ exec /usr/bin/auto-pause-unplug &
 - If it's the case, we assume the headphones were just unplugged (I didn't have any false positive yet)
 - We then pause the playing media with `playerctl`
 
-You can view logs in `journalctl` by grep-ing "cat": `journalctl -b | grep "cat\["`
+You can view the logs using `journalctl`: 
+
+```bash
+journalctl -b | grep -E "\[$(pidof -x /usr/bin/auto-pause-unplug)\]"
+```
+
