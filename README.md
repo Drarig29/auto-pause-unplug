@@ -11,7 +11,9 @@ Dependencies:
 
 ## Usage
 
-Download this script or clone the repository and symlink it somewhere like `/usr/bin/auto-pause-unplug`:
+Download this script or clone the repository.
+
+Then, symlink it somewhere like `/usr/bin/auto-pause-unplug`:
 
 ```bash
 ln -s ~/path/to/auto-pause-unplug.sh /usr/bin/auto-pause-unplug
